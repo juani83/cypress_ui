@@ -6,10 +6,12 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     excludeSpecPattern: [
-      './cypress/e2e/1-getting-started/*', 
-      './cypress/e2e/2-advanced-examples/*'
+      "./cypress/e2e/1-getting-started/*", 
+      "./cypress/e2e/2-advanced-examples/*"
     ],
+    testIsolation: false,
     viewportWidth: 1920,
-    viewportHeight: 1080
+    viewportHeight: 1080,
+    baseUrl: "https://automationintesting.online/",
   },
 });
