@@ -9,7 +9,7 @@ module.exports = defineConfig({
       "./cypress/e2e/1-getting-started/*", 
       "./cypress/e2e/2-advanced-examples/*"
     ],
-    testIsolation: false,
+    testIsolation: false, // true es el valor por defecto
     viewportWidth: 1920,
     viewportHeight: 1080,
     baseUrl: "https://automationintesting.online/",
