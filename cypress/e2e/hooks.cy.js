@@ -1,5 +1,5 @@
 before(() => {
-    alert('Antes de Todooooo');
+    console.log('Antes de Todooooo');
 });
 
 describe('Aserciones Describe 1', () => {
