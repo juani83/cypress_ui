@@ -1,4 +1,5 @@
 describe('Interactura con los elementos', () => {
+
     beforeEach(() => {
         cy.visit('/');    
     });
@@ -25,7 +26,7 @@ describe('Interactura con los elementos', () => {
         cy.get('.openBooking').parent().parent().click(5, 60);
     });
 
-    it.only('Input type texto', () => {
+    it('Input type texto', () => {
         cy.get('#name').type('Juan');
         cy.get('#name').type(' Ignacio');
         cy.get('#email').type('juanbecerra83@gmail.com');
