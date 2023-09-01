@@ -24,4 +24,15 @@ describe('Interactura con los elementos', () => {
         cy.get('.openBooking').parent().parent().click('topRight');
         cy.get('.openBooking').parent().parent().click(5, 60);
     });
+
+    it.only('Input type texto', () => {
+        cy.get('#name').type('Juan');
+        cy.get('#name').type(' Ignacio');
+        cy.get('#email').type('juanbecerra83@gmail.com');
+        cy.get('#phone').type('1136503228');
+
+        cy.get('#name').type('{selectAll}{backspace}');
+        cy.get('#name').type('Nacho');
+        cy.get('#phone').clear();
+    });
 });
